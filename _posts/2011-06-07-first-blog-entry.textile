@@ -1,6 +1,7 @@
 ---
 layout: post
 title: my first post
+tags: alpha beta
 ---
 
 Test message

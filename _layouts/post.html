@@ -6,6 +6,7 @@ layout: default
   <header>
   <h2>{{ page.title }}</h2>
   <time>{{ page.date | date: "%d.%m.%Y" }}</time>
+  <h3>Tags: {{ page.tags[0] }}</h3>
   <header> 
 
   {{ content }}
@@ -27,6 +28,7 @@ layout: default
 	    })();
 	</script>
 	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </footer>
-</article>
 
+     <p>Tag cloud  {% tag_cloud %} </p>
+	 </footer>
+</article>

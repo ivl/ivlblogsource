@@ -1,0 +1,7 @@
+---
+layout: post
+title: Second post
+tags: alpha
+---
+
+Second blog entry
