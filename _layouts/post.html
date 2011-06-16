@@ -1,17 +1,19 @@
 ---
 layout: default
 ---
-<article>
+<article class="blogarticle">
   
   <header>
-  <h2>{{ page.title }}</h2>
-  <time>{{ page.date | date: "%d.%m.%Y" }}</time>
-  <h3>Tags IVL:
+	
+    <h2>{{ page.title }}</h2>
+  	<time class="tm"> <strong> {{page.date | date: "%d"}} <em> {{page.date | date: "%m.%Y" }} </em></strong></time>
+  	  <span class="posttag">
       {% for tag in page.tags %}
-           <a href= "/tags/{{ tag }}">{{ tag }}</a>
-      {% endfor %}      
-</h3>
-  <header> 
+          <a href= "/tags/{{ tag }}">{{ tag }}</a>
+      {% endfor %}
+       </span>     
+   
+  </header> 
 
   {{ content }}
   
